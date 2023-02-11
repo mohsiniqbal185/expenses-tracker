@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    app:flow_verticalStyle="packed"
+    tools:context=".MainActivity">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:lineSpacingExtra="14sp"
+    android:text="Update Income Information"
+    android:textAlignment="center"
+    android:textColor="#0E0E0E"
+    android:textSize="30sp"
+        android:paddingBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/et1_add_income"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="Salary"
+        android:inputType="number"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Budget percentage out of salary:"
+        />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="30sp"
+        android:layout_weight="2"
+        android:background="@android:drawable/spinner_background" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1_add_income"
+        android:layout_gravity="center"
+        android:text="Update"/>
+
+    <Button
+        android:id="@+id/btn2_add_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cancel"
+        app:backgroundTint="#FFC107" />
+
+</LinearLayout>

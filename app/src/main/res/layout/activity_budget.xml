@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    app:flow_verticalStyle="packed"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ACA1A1"
+        android:lineSpacingExtra="14sp"
+        android:text="Your Budget"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Rs. 0"
+        android:id="@+id/tv_1"
+        android:layout_gravity="center"
+        android:textColor="#8BC34A"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/btn1_budget"
+        android:onClick="Add_Income"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ACA1A1"
+        android:lineSpacingExtra="14sp"
+        android:text="Your Expenses"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/tv_2"
+        android:text="Rs.0"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2_budget"
+        android:text="Add Expense"
+        android:textSize="10sp"
+
+        android:layout_gravity="center"
+        android:textAlignment="center"
+
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview1"
+        />
+</LinearLayout>
+

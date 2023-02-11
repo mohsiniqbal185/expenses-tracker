@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    app:flow_verticalStyle="packed"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="14sp"
+        android:text="Add Expense"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="30sp"
+        android:paddingBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/et1_add_expense"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="2021-01-02 00:00"
+        android:textAlignment="center"
+
+        android:selectAllOnFocus="false" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="@android:drawable/spinner_background"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+
+        />
+    <EditText
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/et2_add_expense"
+        android:hint="Description"
+        android:textAlignment="center"
+        android:inputType="textMultiLine"
+
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:hint="Amount of expense"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+
+        android:id="@+id/et3_add_expense"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btn1_add_expense"
+        android:text="Create"/>
+
+    <Button
+        android:id="@+id/btn2_add_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cancel"
+
+        app:backgroundTint="#FFC107" />
+</LinearLayout>
